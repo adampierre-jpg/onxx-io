@@ -1,5 +1,10 @@
 ﻿<script lang="ts">
+	import './layout.css';
+
+	import { resolve } from '$app/paths';
 	import { page } from '$app/stores';
+
+	let { children } = $props();
 
 	type NavItem = {
 		href: string;
@@ -20,7 +25,9 @@
 <div class="site-shell">
 	<header class="site-header">
 		<div class="site-header-inner">
-			<a class="site-logo" href="/" aria-label="ONXX home">ONXX</a>
+			<a class="site-logo" href={resolve('/')} aria-label="ONXX home">
+				<img src="/onxx-logo.png" alt="" class="site-logo-img" />
+			</a>
 
 			<nav class="site-nav" aria-label="Primary">
 				{#each NAV_ITEMS as item}
@@ -39,7 +46,7 @@
 	</header>
 
 	<div class="site-main">
-		<slot />
+		{@render children()}
 	</div>
 
 	<footer class="site-footer">
@@ -93,18 +100,17 @@
 	.site-logo {
 		display: inline-flex;
 		align-items: center;
-		max-height: 80px;
-		font-size: clamp(2.1rem, 4vw, 3.3rem);
-		font-weight: 900;
-		line-height: 0.95;
-		letter-spacing: 0.14em;
-		text-transform: uppercase;
+		max-height: 160px;
+		line-height: 0;
 		text-decoration: none;
-		color: var(--color-onxx-text, #ffffff);
 	}
 
-	.site-logo:hover {
-		color: var(--color-onxx-text, #ffffff);
+	.site-logo-img {
+		height: clamp(4.2rem, 8vw, 6.6rem);
+		width: auto;
+		display: block;
+		max-height: 160px;
+		object-fit: contain;
 	}
 
 	.site-nav {

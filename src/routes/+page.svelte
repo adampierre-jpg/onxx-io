@@ -1,61 +1,543 @@
 <script lang="ts">
-	import type { PageData } from './$types.js';
-
-	let { data }: { data: PageData } = $props();
+	import { resolve } from '$app/paths';
 </script>
 
 <svelte:head>
-	<title>{data.page.title}</title>
+	<title>ONXX | Strength Coaching for Dads 35+</title>
+	<meta
+		name="description"
+		content="Strength That Serves You. Strength coaching for dads 35+ who want to stay strong, mobile, and capable for the long haul."
+	/>
 </svelte:head>
 
-<main class="content-page">
-	<h1>{data.page.title}</h1>
-
-	{#if data.page.isMissing}
-		<p>Home content is not available yet. Re-run the page import to generate `content/pages/home.md`.</p>
-	{:else}
-		{#if data.page.source}
-			<p class="source"><a href={data.page.source} target="_blank" rel="noreferrer">Source</a></p>
-		{/if}
-
-		<div class="markdown">
-			{@html data.page.contentHtml}
+<main class="landing-page">
+	<section class="hero-section">
+		<div class="page-wrap hero-wrap">
+			<p class="section-kicker">ONXX Coaching</p>
+			<h1>Strength That <span>Serves You</span></h1>
+			<p class="hero-subhead">Strength Coaching for Dads 35+</p>
+			<div class="hero-copy">
+				<figure class="hero-art" aria-label="Motivational graphic">
+					<img
+						class="hero-art-img"
+						src="/get-up.png"
+						alt="Minimalist high-contrast illustration of a person with a kettlebell locked out overhead on a black background."
+						width="288"
+						height="512"
+					/>
+				</figure>
+				<p>
+					Strong fathers raise strong families—and that starts with training that fits your real
+					life, not some idealized version of it.
+				</p>
+				<p>
+					You're a man 35+ who wants to stay strong, mobile, and capable for the long haul. You're a
+					dad who wants to keep up with your kids—not just now, but for the next 20 years. You're
+					tired of nagging aches, stiff joints, and feeling like your body is turning against you.
+				</p>
+			</div>
+			<div class="cta-row">
+				<a class="button-primary" href={resolve('/dad-ready-assessment')}>Start Your Assessment</a>
+				<a class="button-secondary" href={resolve('/coaching')}>View Programs</a>
+			</div>
+			<ul class="proof-strip" aria-label="Training details">
+				<li>Train from home</li>
+				<li>No gym required</li>
+				<li>DC/MD/VA + online</li>
+			</ul>
 		</div>
-	{/if}
+	</section>
+
+	<section class="section-block section-problem">
+		<div class="page-wrap split-layout">
+			<div>
+				<p class="section-kicker">The Problem</p>
+				<h2>You Know Something Has To Change.</h2>
+			</div>
+			<div class="copy-stack">
+				<p>
+					It's that you're still training (or not training) like nothing has changed. You're either
+					doing nothing and feeling like crap, or you're grinding yourself into the ground with
+					workouts designed for guys half your age. Or you, 15 years ago.
+				</p>
+				<p>
+					You need something different. Something that builds you up instead of breaking you down.
+					Something that makes you stronger for the life you're actually living.
+				</p>
+				<p>
+					Strength training isn't about chasing Instagram PRs or looking like a fitness model.
+					It's about building practical, durable strength that makes everything in your life easier.
+					Carrying your kiddo for the last 8 blocks. Helping your buddy move, and staying off the injury list. Feeling confident
+					in your own skin again.
+				</p>
+				<p>
+					This is training that respects your time, your responsibilities, and your body. Short,
+					focused sessions. A coach who understands you're not trying to be a pro athlete—you're
+					trying to be a capable, reliable man for your friends and family.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="assessment-band">
+		<div class="page-wrap assessment-grid">
+			<div>
+				<p class="section-kicker">Start Here</p>
+				<h2>Find Out Where You Stand</h2>
+			</div>
+			<div class="assessment-copy">
+				<p>
+					Start with a movement screen to see how you move, where you're strong, and what needs
+					work. No guessing.
+				</p>
+				<a class="button-primary" href={resolve('/dad-ready-assessment')}>Start Your Assessment</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-block">
+		<div class="page-wrap">
+			<div class="section-heading">
+				<p class="section-kicker">The Process</p>
+				<h2>Build Strength That Lasts—Without Sacrificing Your Life.</h2>
+			</div>
+			<div class="step-grid">
+				<article class="step-panel">
+					<span>01</span>
+					<h3>Step 1. Assess.</h3>
+					<p>
+						Start with a movement screen to see how you move, where you're strong, and what needs
+						work. No guessing.
+					</p>
+				</article>
+				<article class="step-panel">
+					<span>02</span>
+					<h3>Step 2. Build.</h3>
+					<p>
+						Get a kettlebell-focused plan designed around your schedule, your equipment, and your
+						goals. Not someone else's. Delivered and tracked right in the ONXX app.
+					</p>
+				</article>
+				<article class="step-panel">
+					<span>03</span>
+					<h3>Step 3. Coach.</h3>
+					<p>
+						Weekly Coaching sessions, video feedback, and smart adjustments so you keep making
+						progress even when life gets busy.
+					</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-block section-fit">
+		<div class="page-wrap split-layout">
+			<div>
+				<p class="section-kicker">This Is For You If</p>
+				<h2>You want useful strength without handing your life over to the gym.</h2>
+			</div>
+			<ul class="fit-list">
+				<li>You're a man 35+ who wants to stay strong, mobile, and capable for the long haul.</li>
+				<li>You want to keep up with your kids—not just now, but for the next 20 years.</li>
+				<li>
+					You're tired of nagging aches, stiff joints, and feeling like your body is turning against
+					you.
+				</li>
+				<li>
+					You want training that respects your intelligence, your schedule, and your
+					responsibilities.
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="final-cta">
+		<div class="page-wrap final-cta-inner">
+			<p class="section-kicker">Ready To Build?</p>
+			<h2>Build Strength That Actually Serves Your Life.</h2>
+			<div class="cta-row">
+				<a class="button-primary" href={resolve('/dad-ready-assessment')}>Start Your Assessment</a>
+				<a class="button-secondary" href={resolve('/contact')}>Schedule A Call</a>
+			</div>
+		</div>
+	</section>
 </main>
 
 <style>
-	.content-page {
-		margin: 0 auto;
+	.landing-page {
+		position: relative;
+		isolation: isolate;
+		overflow: hidden;
+		background:
+			radial-gradient(circle at 18% 0%, rgba(230, 57, 70, 0.16), transparent 30rem),
+			radial-gradient(circle at 88% 24%, rgba(255, 149, 0, 0.1), transparent 24rem),
+			var(--color-onxx-bg);
+	}
+
+	.landing-page::before {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		pointer-events: none;
+		content: '';
+		opacity: 0.16;
+		background-image:
+			linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+		background-size: 5rem 5rem;
+		mask-image: linear-gradient(to bottom, black, transparent 72%);
+	}
+
+	.page-wrap {
+		width: min(100% - 2rem, 72rem);
+		margin-inline: auto;
+	}
+
+	.hero-section {
+		padding: clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 6rem);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	}
+
+	.hero-art {
+		float: right;
+		width: clamp(10rem, 26vw, 17rem);
+		margin: 0.25rem 0 1rem 1.75rem;
+		shape-outside: margin-box;
+	}
+
+	.hero-art-img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.hero-wrap {
+		max-width: 76rem;
+	}
+
+	.section-kicker {
+		margin: 0 0 1rem;
+		color: var(--color-onxx-red);
+		font-family: var(--font-heading, 'Allerta Stencil', system-ui, sans-serif);
+		font-size: 0.78rem;
+		font-weight: 400;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+	}
+
+	.hero-section h1 {
+		max-width: 11ch;
+		margin: 0;
+		font-family: var(--font-h1-h2, 'Saira Stencil', system-ui, sans-serif);
+		font-size: clamp(4.25rem, 12vw, 9rem);
+		font-weight: 400;
+		letter-spacing: -0.08em;
+		line-height: 0.82;
+		text-transform: uppercase;
+		text-wrap: balance;
+	}
+
+	.hero-section h1 span {
+		color: var(--color-onxx-red);
+	}
+
+	.hero-subhead {
+		margin: 1.35rem 0 0;
+		color: var(--color-onxx-text);
+		font-family: var(--font-heading, 'Allerta Stencil', system-ui, sans-serif);
+		font-size: clamp(1.3rem, 3vw, 2rem);
+		font-weight: 400;
+		letter-spacing: 0.04em;
+	}
+
+	.copy-stack,
+	.assessment-copy {
+		max-width: 45rem;
+		color: var(--color-onxx-muted);
+		font-size: 1.075rem;
+		line-height: 1.75;
+	}
+
+	.hero-copy {
+		max-width: 50rem;
+		margin-top: 2rem;
+		display: flow-root;
+		color: var(--color-onxx-muted);
+		font-size: 1.075rem;
+		line-height: 1.75;
+	}
+
+	.hero-copy p {
+		margin: 0 0 1rem;
+	}
+
+	.hero-copy p:last-child {
+		margin-bottom: 0;
+	}
+
+	.copy-stack p,
+	.assessment-copy p {
+		margin: 0;
+	}
+
+	.cta-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.9rem;
+		margin-top: 2.5rem;
+	}
+
+	.button-primary,
+	.button-secondary {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 3.25rem;
+		padding: 0.95rem 1.35rem;
+		border-radius: 0.35rem;
+		font-size: 0.95rem;
+		font-weight: 900;
+		letter-spacing: 0.08em;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition:
+			transform 0.2s ease,
+			border-color 0.2s ease,
+			background-color 0.2s ease;
+	}
+
+	.button-primary {
+		border: 1px solid #b91c1c;
+		background: #b91c1c;
+		color: #ffffff;
+	}
+
+	.button-secondary {
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		background: rgba(255, 255, 255, 0.035);
+		color: var(--color-onxx-text);
+	}
+
+	.button-primary:hover,
+	.button-primary:focus-visible,
+	.button-secondary:hover,
+	.button-secondary:focus-visible {
+		transform: translateY(-2px);
+	}
+
+	.button-primary:focus-visible,
+	.button-secondary:focus-visible {
+		outline: 2px solid var(--color-onxx-velocity);
+		outline-offset: 3px;
+	}
+
+	.button-secondary:hover,
+	.button-secondary:focus-visible {
+		border-color: rgba(230, 57, 70, 0.72);
+		background: rgba(230, 57, 70, 0.12);
+	}
+
+	.proof-strip {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1px;
 		max-width: 52rem;
-		padding: 2rem 1rem 4rem;
+		padding: 1px;
+		margin: 3rem 0 0;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		background: rgba(255, 255, 255, 0.08);
+		list-style: none;
 	}
 
-	h1 {
-		font-size: 2rem;
-		margin: 0 0 1rem;
+	.proof-strip li {
+		padding: 1rem;
+		color: var(--color-onxx-text);
+		background: rgba(15, 15, 15, 0.92);
+		font-size: 0.85rem;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
-	.source {
-		font-size: 0.875rem;
-		margin: 0 0 1.25rem;
+	.section-block {
+		padding: clamp(4.5rem, 9vw, 7rem) 0;
 	}
 
-	.markdown :global(*) {
-		max-width: 100%;
+	.section-block + .section-block,
+	.section-fit {
+		border-top: 1px solid rgba(255, 255, 255, 0.08);
 	}
 
-	.markdown :global(p),
-	.markdown :global(ul),
-	.markdown :global(ol),
-	.markdown :global(blockquote) {
-		line-height: 1.7;
-		margin: 0 0 1rem;
+	.section-problem,
+	.section-fit,
+	.assessment-band {
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
 	}
 
-	.markdown :global(h2),
-	.markdown :global(h3),
-	.markdown :global(h4) {
-		margin: 1.5rem 0 0.75rem;
+	.split-layout,
+	.assessment-grid {
+		display: grid;
+		gap: clamp(2rem, 6vw, 5rem);
+		grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+		align-items: start;
+	}
+
+	h2 {
+		max-width: 13ch;
+		margin: 0;
+		font-family: var(--font-h1-h2, 'Saira Stencil', system-ui, sans-serif);
+		font-size: clamp(2.4rem, 6vw, 5rem);
+		font-weight: 400;
+		letter-spacing: -0.06em;
+		line-height: 0.9;
+		text-transform: uppercase;
+		text-wrap: balance;
+	}
+
+	.copy-stack {
+		display: grid;
+		gap: 1.1rem;
+	}
+
+	.assessment-band {
+		padding: clamp(3rem, 7vw, 5rem) 0;
+		border-block: 1px solid rgba(230, 57, 70, 0.28);
+	}
+
+	.assessment-grid {
+		align-items: center;
+	}
+
+	.assessment-copy .button-primary {
+		margin-top: 1.5rem;
+	}
+
+	.section-heading {
+		max-width: 54rem;
+		margin-bottom: clamp(2rem, 5vw, 3.5rem);
+	}
+
+	.section-heading h2 {
+		max-width: 15ch;
+	}
+
+	.step-grid {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.step-panel {
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		background: rgba(17, 17, 17, 0.82);
+	}
+
+	.step-panel {
+		padding: 1.5rem;
+	}
+
+	.step-panel span {
+		display: block;
+		margin-bottom: 2rem;
+		color: rgba(230, 57, 70, 0.8);
+		font-family: var(--font-sans, 'Montserrat', system-ui, sans-serif);
+		font-size: 3rem;
+		font-weight: 900;
+		line-height: 1;
+	}
+
+	.step-panel h3 {
+		margin: 0 0 0.85rem;
+		color: var(--color-onxx-text);
+		font-size: 1.3rem;
+		line-height: 1.15;
+	}
+
+	.step-panel p,
+	.fit-list {
+		color: var(--color-onxx-muted);
+		line-height: 1.65;
+	}
+
+	.step-panel p {
+		margin: 0;
+	}
+
+	.fit-list {
+		display: grid;
+		gap: 0.8rem;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.fit-list li {
+		padding: 1rem 0 1rem 1.25rem;
+		border-left: 3px solid rgba(230, 57, 70, 0.72);
+		background: linear-gradient(90deg, rgba(230, 57, 70, 0.1), transparent);
+	}
+
+	.final-cta {
+		padding: clamp(4.5rem, 9vw, 7rem) 0;
+		border-top: 1px solid rgba(230, 57, 70, 0.28);
+		background:
+			radial-gradient(circle at 20% 0%, rgba(230, 57, 70, 0.16), transparent 28rem),
+			rgba(255, 255, 255, 0.025);
+	}
+
+	.final-cta-inner h2 {
+		max-width: 14ch;
+	}
+
+	@media (max-width: 900px) {
+		.split-layout,
+		.assessment-grid,
+		.step-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-section h1 {
+			font-size: clamp(3.6rem, 18vw, 6rem);
+		}
+
+		.proof-strip {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.hero-art {
+			float: none;
+			width: 100%;
+			max-width: 16rem;
+			margin: 0 auto 1.5rem;
+		}
+	}
+
+	@media (max-width: 540px) {
+		.button-primary,
+		.button-secondary {
+			width: 100%;
+		}
+
+		.hero-section h1,
+		h2 {
+			letter-spacing: -0.055em;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.button-primary,
+		.button-secondary {
+			transition: none;
+		}
+
+		.button-primary:hover,
+		.button-primary:focus-visible,
+		.button-secondary:hover,
+		.button-secondary:focus-visible {
+			transform: none;
+		}
 	}
 </style>

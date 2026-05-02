@@ -10,7 +10,8 @@
 	--color-onxx-text: #ffffff;
 	--color-onxx-muted: #a1a1a1;
 	--font-sans: 'Montserrat', system-ui, sans-serif;
-	--font-heading: 'Montserrat', system-ui, sans-serif;
+	--font-heading: 'Allerta Stencil', system-ui, sans-serif;
+	--font-h1-h2: 'Saira Stencil', system-ui, sans-serif;
 }
 
 @layer base {
@@ -22,14 +23,20 @@
 	}
 
 	h1,
-	h2,
+	h2 {
+		font-family: var(--font-h1-h2);
+		font-weight: 400;
+		color: var(--color-onxx-text);
+		letter-spacing: 0.04em;
+	}
+
 	h3,
 	h4,
 	h5,
 	h6 {
 		font-family: var(--font-heading);
-		font-weight: 800;
+		font-weight: 400;
 		color: var(--color-onxx-text);
-		letter-spacing: 0.02em;
+		letter-spacing: 0.04em;
 	}
 }
