@@ -11,14 +11,12 @@
 <main class="content-page">
 	<h1>{data.page.title}</h1>
 
-	
-
 	<section class="section-block about-coach-section">
 		<div class="page-wrap coach-layout">
 			<div>
 				<p class="section-kicker">Who You'll Train With</p>
-				<div class="coach-heading-row">
-					<h2>Meet Coach Adam</h2>
+				<h2>Meet Coach Adam</h2>
+				<div class="copy-stack">
 					<figure class="coach-photo" aria-label="Coach Adam portrait">
 						<img
 							class="coach-photo-img"
@@ -29,8 +27,6 @@
 							decoding="async"
 						/>
 					</figure>
-				</div>
-				<div class="copy-stack">
 					<p>
 						I'm Adam Pierre, and I built ONXX because I got tired of watching good men—fathers,
 						professionals, guys with real responsibilities—get sold garbage fitness advice that
@@ -46,7 +42,6 @@
 			<div class="credential-panel">
 				<h3>Credentials</h3>
 				<ul>
-					
 					<li>ISSA Certified Personal Trainer & Nutrition Coach</li>
 					<li>ISSA Corrective Exercise Specialist</li>
 					<li>Original Strength Pro Coach</li>
@@ -121,21 +116,22 @@
 	}
 
 	.copy-stack {
-		display: grid;
-		gap: 1.1rem;
+		display: flow-root;
 	}
 
-	.coach-heading-row {
-		display: grid;
-		grid-template-columns: minmax(0, 1fr) auto;
-		gap: clamp(1rem, 4vw, 2rem);
-		align-items: center;
-		margin-bottom: 1.25rem;
+	.copy-stack p {
+		margin: 0 0 1.1rem;
+	}
+
+	.copy-stack p:last-child {
+		margin-bottom: 0;
 	}
 
 	.coach-photo {
-		margin: 0;
+		float: right;
 		width: clamp(8rem, 20vw, 11.5rem);
+		margin: 0.25rem 0 1rem 1.5rem;
+		shape-outside: margin-box;
 	}
 
 	.coach-photo-img {
@@ -146,7 +142,7 @@
 
 	.about-coach-section h2 {
 		max-width: 13ch;
-		margin: 0;
+		margin: 0 0 1.25rem;
 		font-family: var(--font-h1-h2, 'Saira Stencil', system-ui, sans-serif);
 		font-size: clamp(2.4rem, 6vw, 5rem);
 		font-weight: 400;
@@ -185,12 +181,11 @@
 	}
 
 	@media (max-width: 640px) {
-		.coach-heading-row {
-			grid-template-columns: 1fr;
-		}
-
 		.coach-photo {
-			width: min(14rem, 100%);
+			float: none;
+			width: 100%;
+			max-width: 14rem;
+			margin: 0 auto 1.5rem;
 		}
 	}
 
