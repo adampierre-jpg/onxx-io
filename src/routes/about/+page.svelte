@@ -17,7 +17,19 @@
 		<div class="page-wrap coach-layout">
 			<div>
 				<p class="section-kicker">Who You'll Train With</p>
-				<h2>Meet Coach Adam</h2>
+				<div class="coach-heading-row">
+					<h2>Meet Coach Adam</h2>
+					<figure class="coach-photo" aria-label="Coach Adam portrait">
+						<img
+							class="coach-photo-img"
+							src="/coach-adam.jpg"
+							alt="Professional portrait of Coach Adam, smiling, with a salt-and-pepper beard and glasses, wearing a black t-shirt."
+							width="767"
+							height="1024"
+							decoding="async"
+						/>
+					</figure>
+				</div>
 				<div class="copy-stack">
 					<p>
 						I'm Adam Pierre, and I built ONXX because I got tired of watching good men—fathers,
@@ -113,6 +125,25 @@
 		gap: 1.1rem;
 	}
 
+	.coach-heading-row {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		gap: clamp(1rem, 4vw, 2rem);
+		align-items: center;
+		margin-bottom: 1.25rem;
+	}
+
+	.coach-photo {
+		margin: 0;
+		width: clamp(8rem, 20vw, 11.5rem);
+	}
+
+	.coach-photo-img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
 	.about-coach-section h2 {
 		max-width: 13ch;
 		margin: 0;
@@ -150,6 +181,16 @@
 	@media (max-width: 900px) {
 		.coach-layout {
 			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.coach-heading-row {
+			grid-template-columns: 1fr;
+		}
+
+		.coach-photo {
+			width: min(14rem, 100%);
 		}
 	}
 
