@@ -34,10 +34,14 @@
 			<div class="credential-panel">
 				<h3>Credentials</h3>
 				<ul>
-					<li>StrongFirst SFG1 Kettlebell Certification</li>
+					
 					<li>ISSA Certified Personal Trainer & Nutrition Coach</li>
 					<li>ISSA Corrective Exercise Specialist</li>
 					<li>Original Strength Pro Coach</li>
+					<li>Plan Strong</li>
+					<li>Built Stong</li>
+					<li>Strong Endurance</li>
+					<li>Bioforce Conditioning Coach</li>
 					<li>Nearly a decade coaching men to real-world strength</li>
 				</ul>
 			</div>
