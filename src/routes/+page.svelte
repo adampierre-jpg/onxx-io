@@ -8,7 +8,9 @@
 		name="description"
 		content="Strength That Serves You. Strength coaching for dads 35+ who want to stay strong, mobile, and capable for the long haul."
 	/>
+	
 </svelte:head>
+
 
 <main class="landing-page">
 	<section class="hero-section">
@@ -157,7 +159,7 @@
 			<h2>Build Strength That Actually Serves Your Life.</h2>
 			<div class="cta-row">
 				<a class="button-primary" href={resolve('/dad-ready-assessment')}>Start Your Assessment</a>
-				<a class="button-secondary" href={resolve('/contact')}>Schedule A Call</a>
+				<a class="button-secondary" href="https://onxx.as.me/consultcall">Schedule A Call</a>
 			</div>
 		</div>
 	</section>
