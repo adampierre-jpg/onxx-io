@@ -3,10 +3,10 @@
 </script>
 
 <svelte:head>
-	<title>ONXX | Strength Coaching for Dads 35+</title>
+	<title>ONXX | Strength Coaching for Moms & Dads 35+</title>
 	<meta
 		name="description"
-		content="Strength That Serves You. Strength coaching for dads 35+ who want to stay strong, mobile, and capable for the long haul."
+		content="Strength That Serves You. Strength coaching for moms & dads 35+ who want to stay strong, mobile, and capable for the long haul."
 	/>
 </svelte:head>
 
@@ -15,7 +15,7 @@
 		<div class="page-wrap hero-wrap">
 			<p class="section-kicker">ONXX Coaching</p>
 			<h1>Strength That <span>Serves You</span></h1>
-			<p class="hero-subhead">Strength Coaching for Dads 35+</p>
+			<p class="hero-subhead">Strength Coaching for Moms & Dads 35+</p>
 			<div class="hero-copy">
 				<figure class="hero-art" aria-label="Motivational graphic">
 					<img
@@ -27,13 +27,14 @@
 					/>
 				</figure>
 				<p>
-					Strong fathers raise strong families—and that starts with training that fits your real
+					Strong parents raise strong families—and that starts with training that fits your real
 					life, not some idealized version of it.
 				</p>
+				<p>Whether you're flying solo or a duo, this is for parents 35+ who need to stay strong.</p>
 				<p>
-					You're a man 35+ who wants to stay strong, mobile, and capable for the long haul. You're a
-					dad who wants to keep up with your kids—not just now, but for the next 20 years. You're
-					tired of nagging aches, stiff joints, and feeling like your body is turning against you.
+					You're 35+ and want to stay strong, mobile, and capable for the long haul. You're a parent
+					who wants to keep up with your kids—not just now, but for the next 20 years. You're tired
+					of nagging aches, stiff joints, and feeling like your body is turning against you.
 				</p>
 			</div>
 			<div class="cta-row">
@@ -55,25 +56,30 @@
 				<h2>You Know Something Has To Change.</h2>
 			</div>
 			<div class="copy-stack">
+				<p>It's not that you don't care.</p>
 				<p>
-					It's that you're still training (or not training) like nothing has changed. You're either
-					doing nothing and feeling like crap, or you're grinding yourself into the ground with
-					workouts designed for guys half your age. Or you, 15 years ago.
+					It's that you're still training—or not training—like nothing has changed. You're either
+					doing nothing and feeling like crap, or grinding yourself into the ground with workouts
+					built for people half your age. Or for the version of you from 15 years ago.
 				</p>
 				<p>
 					You need something different. Something that builds you up instead of breaking you down.
 					Something that makes you stronger for the life you're actually living.
 				</p>
 				<p>
-					Strength training isn't about chasing Instagram PRs or looking like a fitness model.
+					Strength training isn't about chasing Instagram PRs or trying to look like a fitness
+					model.
+				</p>
+				<p>
 					It's about building practical, durable strength that makes everything in your life easier.
-					Carrying your kiddo for the last 8 blocks. Helping your buddy move, and staying off the injury list. Feeling confident
-					in your own skin again.
+					Carrying your kid for the last 8 blocks. Loading up the car without tweaking your back.
+					Helping a friend move and staying off the injury list. Feeling confident in your own skin
+					again.
 				</p>
 				<p>
 					This is training that respects your time, your responsibilities, and your body. Short,
 					focused sessions. A coach who understands you're not trying to be a pro athlete—you're
-					trying to be a capable, reliable man for your friends and family.
+					trying to be a capable, reliable parent for the people who count on you.
 				</p>
 			</div>
 		</div>
@@ -137,7 +143,7 @@
 				<h2>You want useful strength without handing your life over to the gym.</h2>
 			</div>
 			<ul class="fit-list">
-				<li>You're a man 35+ who wants to stay strong, mobile, and capable for the long haul.</li>
+				<li>You're 35+ and want to stay strong, mobile, and capable for the long haul.</li>
 				<li>You want to keep up with your kids—not just now, but for the next 20 years.</li>
 				<li>
 					You're tired of nagging aches, stiff joints, and feeling like your body is turning against
@@ -147,6 +153,7 @@
 					You want training that respects your intelligence, your schedule, and your
 					responsibilities.
 				</li>
+				<li>You want a plan that fits real life, not fantasy life.</li>
 			</ul>
 		</div>
 	</section>
