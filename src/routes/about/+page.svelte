@@ -28,8 +28,8 @@
 						/>
 					</figure>
 					<p>
-						I'm Adam Pierre, and I built ONXX because I got tired of watching good men—fathers,
-						professionals, guys with real responsibilities—get sold garbage fitness advice that
+						I'm Adam Pierre, and I built ONXX because I got tired of watching good people—parents,
+						professionals, folks with real responsibilities—get sold garbage fitness advice that
 						doesn't fit their lives.
 					</p>
 					<p>
@@ -49,7 +49,7 @@
 					<li>Built Stong</li>
 					<li>Strong Endurance</li>
 					<li>Bioforce Conditioning Coach</li>
-					<li>Nearly a decade coaching men to real-world strength</li>
+					<li>Nearly a decade coaching people to real-world strength</li>
 				</ul>
 			</div>
 		</div>

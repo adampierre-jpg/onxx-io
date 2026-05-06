@@ -347,7 +347,7 @@
 </script>
 
 <svelte:head>
-	<title>Dad Ready Assessment | ONXX</title>
+	<title>Parent Ready Assessment | ONXX</title>
 </svelte:head>
 
 <div id="dra-assessment-wrapper" bind:this={wrapperEl}>
@@ -355,10 +355,10 @@
 		{#if !hasStarted}
 			<header class="dra-header" id="dra-intro-section">
 				<div class="dra-logo">ONXX</div>
-				<h1>Dad Ready Assessment</h1>
+				<h1>Parent Ready Assessment</h1>
 				<p class="dra-subhead">
-					Most men over 35 don't have a training problem - they have an awareness problem. Find out
-					exactly where you stand.
+					Most parents over 35 don't have a training problem - they have an awareness problem. Find
+					out exactly where you stand.
 				</p>
 
 				<div class="dra-time-badge">Takes under 10 minutes</div>
@@ -987,7 +987,7 @@
 			<p>
 				&copy; {CURRENT_YEAR} <a href={ONXX_SITE_URL}>ONXX</a>. All rights reserved.
 			</p>
-			<p style="margin-top: 8px;">Dad Ready Assessment v2.0</p>
+			<p style="margin-top: 8px;">Parent Ready Assessment v2.0</p>
 		</footer>
 	</div>
 
