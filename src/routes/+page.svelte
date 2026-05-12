@@ -8,7 +8,11 @@
 		name="description"
 		content="Strength That Serves You. Strength coaching for moms & dads 35+ who want to stay strong, mobile, and capable for the long haul."
 	/>
-	
+	<script
+		src="https://widget.senja.io/widget/3ba2bdae-4634-4fb6-89bf-c31c297183e1/platform.js"
+		type="text/javascript"
+		async
+	></script>
 </svelte:head>
 
 
@@ -56,6 +60,22 @@
 				<li>No gym required</li>
 				<li>DC/MD/VA + online</li>
 			</ul>
+		</div>
+	</section>
+
+	<section class="section-block">
+		<div class="page-wrap">
+			<div class="section-heading">
+				<p class="section-kicker">Reviews</p>
+				<h2>What Do Parents Saying About ONXX Coaching</h2>
+			</div>
+			<div
+				class="senja-embed"
+				data-id="3ba2bdae-4634-4fb6-89bf-c31c297183e1"
+				data-mode="shadow"
+				data-lazyload="false"
+				style="display: block; width: 100%;"
+			></div>
 		</div>
 	</section>
 
