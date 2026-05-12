@@ -67,7 +67,7 @@
 		<div class="page-wrap">
 			<div class="section-heading">
 				<p class="section-kicker">Reviews</p>
-				<h2>What Do Parents Saying About ONXX Coaching</h2>
+				<h2>What Do Parents Say About ONXX Coaching</h2>
 			</div>
 			<div
 				class="senja-embed"
@@ -306,7 +306,7 @@
 	.copy-stack,
 	.assessment-copy {
 		max-width: 45rem;
-		color: var(--color-onxx-muted);
+		color: var(--color-onxx-text);
 		font-size: 1.075rem;
 		line-height: 1.75;
 	}
@@ -315,7 +315,7 @@
 		max-width: 50rem;
 		margin-top: 2rem;
 		display: flow-root;
-		color: var(--color-onxx-muted);
+		color: var(--color-onxx-text);
 		font-size: 1.075rem;
 		line-height: 1.75;
 	}
@@ -509,12 +509,16 @@
 
 	.step-panel p,
 	.fit-list {
-		color: var(--color-onxx-muted);
 		line-height: 1.65;
 	}
 
 	.step-panel p {
+		color: var(--color-onxx-text);
 		margin: 0;
+	}
+
+	.fit-list {
+		color: var(--color-onxx-muted);
 	}
 
 	.fit-list {

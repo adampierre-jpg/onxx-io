@@ -156,7 +156,7 @@
 		min-height: 28rem;
 		flex-direction: column;
 		padding: clamp(1.4rem, 4vw, 2rem);
-		color: var(--color-onxx-muted);
+		color: var(--color-onxx-text);
 		line-height: 1.65;
 	}
 
