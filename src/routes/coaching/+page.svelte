@@ -29,7 +29,7 @@
 				<article class="offer-card">
 					<p class="offer-type">Strength & Conditioning</p>
 					<h3>In-Person & Online</h3>
-					<p class="offer-price">Starting at $425/month</p>
+					
 					<p>
 						In-Person & Online. Periodic in-person sessions or online sessions to dial in technique,
 						plus day-to-day programming and accountability. Programs delivered on the ONXX App.
@@ -42,7 +42,7 @@
 				<article class="offer-card">
 					<p class="offer-type">Nutrition</p>
 					<h3>Nutrition Coaching Add-On</h3>
-					<p class="offer-price">+$125/month</p>
+				
 					<ul>
 						<li>Custom macro targets for fat loss or muscle gain</li>
 						<li>Weekly accountability check-ins</li>
