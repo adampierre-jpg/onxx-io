@@ -194,7 +194,7 @@
 			<h2>Build Strength That Actually Serves Your Life.</h2>
 			<div class="cta-row">
 				<a class="button-primary" href={resolve('/parent-ready-assessment')}>Start Your Assessment</a>
-				<a class="button-secondary" href="https://onxx.as.me/consultcall">Schedule A Call</a>
+				<a class="button-secondary" href={resolve('/contact')}>Schedule A Call</a>
 			</div>
 		</div>
 	</section>
